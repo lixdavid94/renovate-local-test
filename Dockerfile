@@ -1,1 +1,1 @@
-FROM ubuntu:focal-20230301
+FROM ubuntu:jammy-20230301
