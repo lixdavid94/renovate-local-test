@@ -16,6 +16,9 @@
   ],
   "packageRules": [
     {
+      "matchPackageNames": [
+        "apache/tomcat"
+      ],
       "matchUpdateTypes": [
         "major",
         "minor"
