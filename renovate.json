@@ -6,7 +6,7 @@
   "regexManagers": [
     {
       "fileMatch": [
-        "^Dockerfile$"
+        "tomcat-8/Dockerfile"
       ],
       "matchStrings": [
         "datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?\\sENV .*?_VERSION=(?<currentValue>.*)\\s"
