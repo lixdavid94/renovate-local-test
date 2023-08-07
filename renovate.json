@@ -14,12 +14,5 @@
       "versioningTemplate": "semver"
     }
   ],
-  "packageRules": [
-    {
-      "matchManagers": [
-        "regex"
-      ],
-      "extractVersion": "^v(?<version>.*)$"
-    }
-  ]
+  "packageRules": []
 }
