@@ -28,9 +28,12 @@
       "matchUpdateTypes": [
         "patch"
       ],
+      "matchPackageNames": [
+        "apache/tomcat"
+      ],
       "addLabels": [
         "tomcat",
-        "automerge-tomcat-patch"
+        "automerge-apache-tomcat-patch"
       ],
       "matchCurrentVersion": "!/^0/",
       "platformAutomerge": true,
