@@ -6,7 +6,7 @@
   "regexManagers": [
     {
       "fileMatch": [
-        ".*/Dockerfile"
+        "^Dockerfile$"
       ],
       "matchStrings": [
         "datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?\\sENV TOMCAT_VERSION (?<currentValue>.*)\\s"
@@ -20,13 +20,6 @@
         "regex"
       ],
       "extractVersion": "^v(?<version>.*)$"
-    },
-    {
-      "matchUpdateTypes": [
-        "major",
-        "minor"
-      ],
-      "enabled": false
     }
   ]
 }
