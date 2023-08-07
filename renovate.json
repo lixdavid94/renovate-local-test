@@ -6,7 +6,7 @@
   "regexManagers": [
     {
       "fileMatch": [
-        "tomcat-8/Dockerfile"
+        "tomcat.*/Dockerfile"
       ],
       "matchStrings": [
         "datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?\\sENV .*?_VERSION=(?<currentValue>.*)\\s"
@@ -14,5 +14,13 @@
       "versioningTemplate": "semver"
     }
   ],
-  "packageRules": []
+  "packageRules": [
+    {
+      "matchUpdateTypes": [
+        "major",
+        "minor"
+      ],
+      "enabled": false
+    }
+  ]
 }
