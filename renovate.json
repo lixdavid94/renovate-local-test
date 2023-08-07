@@ -9,7 +9,7 @@
         "tomcat.*/Dockerfile"
       ],
       "matchStrings": [
-        "datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?\\sENV .*?_VERSION=(?<currentValue>.*)\\s"
+        "datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?\\sENV .*?_VERSION (?<currentValue>.*)\\s"
       ],
       "versioningTemplate": "semver"
     }
