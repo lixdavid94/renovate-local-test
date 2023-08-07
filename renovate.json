@@ -21,6 +21,22 @@
         "minor"
       ],
       "enabled": false
+    },
+    {
+      "groupName": "automerge-tomcat-patch",
+      "groupSlug": "tomcat-patch",
+      "matchUpdateTypes": [
+        "patch"
+      ],
+      "addLabels": [
+        "tomcat",
+        "automerge-tomcat-patch"
+      ],
+      "matchCurrentVersion": "!/^0/",
+      "platformAutomerge": true,
+      "automerge": true,
+      "automergeType": "pr",
+      "commitMessageSuffix": "[AUTO-MERGE-PR]"
     }
   ]
 }
