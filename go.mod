@@ -33,5 +33,5 @@ require (
 	k8s.io/apimachinery v0.27.4
 	k8s.io/client-go v0.27.4
 	k8s.io/utils v0.0.0-20230726121419-3b25d923346b
-	sigs.k8s.io/kind v0.19.0
+	sigs.k8s.io/kind v0.22.0
 )
