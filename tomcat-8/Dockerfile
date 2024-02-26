@@ -1,4 +1,4 @@
-FROM ubuntu@sha256:b2175cd4cfdd5cdb1740b0e6ec6bbb4ea4892801c0ad5101a81f694152b6c559
+FROM ubuntu@sha256:81bba8d1dde7fc1883b6e95cd46d6c9f4874374f2b360c8db82620b33f6b5ca1
 
 # renovate: datasource=github-tags depName=apache/tomcat
 ENV TOMCAT_VERSION 8.5.90
