@@ -84,7 +84,7 @@ def runTestTask() {
             -e REPOSITORIES='${params.REPOSITORIES}' \
             -e SHOULD_BUILD=true \
             -e SHOULD_DEPLOY=true \
-            ubuntu@sha256:b2175cd4cfdd5cdb1740b0e6ec6bbb4ea4892801c0ad5101a81f694152b6c559
+            releases-docker.jfrog.io/jfrog/artifactory-pro:7.71.11@sha256:a026016494439cbd87be19de8b899c738daca6fcd337a792b77386be72af024e
     """,
     label: "Run tests")
 }
@@ -201,7 +201,7 @@ pipeline {
                                     runTestTask()
                                 } finally {
                                     sh("docker stop \$(cat containerid)")
-                                    docker.image('ubuntu@sha256:b2175cd4cfdd5cdb1740b0e6ec6bbb4ea4892801c0ad5101a81f694152b6c559').inside('-u root:root') {
+                                    docker.image('releases-docker.jfrog.io/jfrog/artifactory-pro:7.71.11@sha256:a026016494439cbd87be19de8b899c738daca6fcd337a792b77386be72af024e').inside('-u root:root') {
                                         steps.sh("rm -rf integration-tests")
                                     }
                                     sh("rm -rf .docker /tmp/jenkins")
