@@ -8,7 +8,7 @@ require (
 	github.com/alecthomas/kong v0.8.0
 	github.com/buildpacks/pack v0.30.0-pre3
 	github.com/docker/cli v24.0.5+incompatible
-	github.com/docker/docker v24.0.5+incompatible
+	github.com/docker/docker v24.0.9+incompatible
 	github.com/go-git/go-git/v5 v5.8.1
 	github.com/go-playground/validator/v10 v10.15.0
 	github.com/go-test/deep v1.1.0
