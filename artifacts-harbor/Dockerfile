@@ -1,0 +1,1 @@
+FROM goharbor/harbor-core:v2.9.1

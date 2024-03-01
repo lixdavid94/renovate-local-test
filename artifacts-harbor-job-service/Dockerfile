@@ -1,0 +1,1 @@
+FROM goharbor/harbor-jobservice:v2.9.1
